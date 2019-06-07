@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>로그인</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="css/font-awesome.min.css" media="screen" title="no title" charset="utf-8">
+    <!-- Custom style -->
+    <link rel="stylesheet" href="css/style.css" media="screen" title="no title" charset="utf-8">
+  </head>
+
+<body>
+  <article class="container">
+      <div class="page-header">
+        <h1>로그인 <small>Login</small></h1>
+      </div>
+      <div class="col-md-6 col-md-offset-3">
+        <form action = "./login_check.php" method="post">
+          <h5 class="form-signin-heading">로그인 정보를 입력하세요</h5>
+          <div class="form-group">
+            <label for="id">아이디</label>
+            <input type="text" class="form-control" name="id" placeholder="아이디">
+          </div>
+    
+          <div class="form-group">
+            <label for="pwd">비밀번호</label>
+            <input type="password" class="form-control" name="pwd" placeholder="비밀번호">
+          </div>
+
+          <div class="form-group text-center">
+            <button type="submit" class="btn btn-info">로그인<i class="fa fa-check spaceLeft"></i></button>
+          </div>
+        </form>
+        <div class="form-group text-center">
+        <button class="btn btn-info" onclick="location.href='./select_class.html'">회원가입<i class="fa fa-check spaceLeft"></i></button>
+      </div>
+    </article>
+ 
+   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+   <!-- Include all compiled plugins (below), or include individual files as needed -->
+   
+   <script src="js/bootstrap.min.js"></script>
+
+  </body>
+</html>

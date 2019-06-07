@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+    <title>비밀번호 확인</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="css/font-awesome.min.css" media="screen" title="no title" charset="utf-8">
+    <!-- Custom style -->
+    <link rel="stylesheet" href="css/style.css" media="screen" title="no title" charset="utf-8">
+  </head>
+
+<body>
+  <article class="container">
+      <div class="page-header">
+        <h1>비밀번호 확인 </h1>
+      </div>
+      <div class="col-md-6 col-md-offset-3">
+        <form action = "./modify1.php" method="post">
+          <h5 class="form-signin-heading">비밀번호를 입력하세요.</h5>
+          <div class="form-group">
+            <label for="pwd">비밀번호</label>
+            <input type="password" class="form-control" name="pw" placeholder="비밀번호 확인">
+          </div>
+
+          <div class="form-group text-center">
+            <button type="submit" class="btn btn-info">확인<i class="fa fa-check spaceLeft"></i></button>
+          </div>
+        </form>
+    </article>
+ 
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+   
+   <script src="js/bootstrap.min.js"></script>
+
+  </body>
+</html>

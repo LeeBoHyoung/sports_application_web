@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>ASL 스포츠 레슨 신청 홈페이지</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<link rel="stylesheet" href="assets/css/main.css" />
+
+	</head>
+	<body>
+		<?php
+		session_start();
+		if(isset($_SESSION['S_ID'])){
+			$id = $_SESSION['S_ID'];
+		}
+		else if(isset($_SESSION['C_ID'])){
+			$id = $_SESSION['C_ID'];
+		}
+        ?>
+		<!-- Banner -->
+			<section id="banner">
+				<h2><strong>Sports</strong> makes your life enjoyable!</h2>
+				<p>Let's Login or Sign up!!</p>
+				<ul class="actions">
+					<li><a class="button special"><?php echo $id.'님 환영합니다.'?></a></li>
+					<li><a href="/join/logout.php" class="button special">로그아웃</a></li>
+				</ul>
+			</section>
+
+		<!-- One -->
+			<section id="one" class="wrapper special">
+				<div class="inner">
+					<header class="major">
+						<h2>MENU</h2>
+					</header>
+					<div class="features">
+						<div class="feature">
+							<i class="fa fa-diamond"></i></br>
+							<button class = "btn btn-light" onclick="location.href='/mypage/mypage.php'"><h3>MY PAGE</h3></button>
+							<p>Check or Modify your information.</p>
+						</div>
+						<div class="feature">
+							<i class="fa fa-paper-plane-o"></i></br>
+							<button class="btn btn-light" onclick="location.href='/apply/apply_form.php'"><h3>Lesson Application</h3></button>
+							<p>Let's applying sport lesson you want!</p>
+						</div>
+						<div class="feature">
+							<i class="fa fa-copy"></i></br>
+							<button class="btn btn-light" onclick="location.href='/register/register.php'"><h3>Lesson Registration</h3></button>
+							<p>Register sport lesson you can teach passionately!</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="copyright">
+					&copy; Page Administrater: <a href="https://www.facebook.com/bohyoung.lee.35">facebook</a>.
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
